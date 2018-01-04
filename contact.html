@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <meta charset="utf-8">
+    <link href="contact.css" type="text/css" rel="stylesheet">
+    <head>
+        
+    <title>les formulaires en html</title>
+        
+<link href="formulaire.css" type="text/css" rel="stylesheet">
+<meta charset="utf-8">
+<style>
+    body{
+        background-image: url(images/logo_gaumar.png);
+        background-size: cover;
+    }    
+</style>     
+    </head>
+    <body>
+    <form action="#" method="get" enctype="text/plain" name="formulaire1">
+     <label>Nom:
+            <input name="nom" type="text" id="nom"/>
+        </label>
+            <br/>
+            <br/>
+        <label>Société:
+            <input société="société" type="text" id="société"/>
+        </label>
+            <br/>
+            <br/>
+        <label>Adresse:
+                <textarea name="adresse" rows="3" id="adresse"></textarea>
+            </label> 
+            <br/>
+            <br/>
+            <label>Ville:<!--permet un choix multiple-->
+            <input ville="ville" type="text" id="ville"/>
+        </label>
+        <br/>
+        <br/>
+        <label>Email:
+                <input name="email" type="text" id="email" value="                  @     ">
+            </label><br/>
+        <br/>
+        
+            <label>Téléphone :
+                <input name="telephone" type="text" id="telephone" maxlength="10" size="30" autofocus="on" >
+            </label>
+        <br/>
+        <br/>
+        <label>Message : 
+                <textarea name="message" rows="9" id="message"></textarea>
+           </label> 
+         <fieldset>
+          <legend>traitement du formulaire</legend>
+              <label>
+          <input type="submit" name="submit" value="Envoyer"/>
+              Envoyer</label>
+              ou bien,
+          <label><input type="reset" name="reset" value="Réinitialisez"/></label>
+          </fieldset>
+        </form>
+    </body>
+</html>
